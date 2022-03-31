@@ -1,0 +1,12 @@
+@import "./header";
+@import "./footer";
+
+.main {
+  background: url("@img/photo_2021-11-10_08-19-33.jpg") 0 0 no-repeat;
+}
+.main-title {
+  color: red;
+}
+.main-title__text {
+  color: aliceblue;
+}

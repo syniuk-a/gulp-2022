@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  border-radius: 15px;
+  background-color: #000;
+}
+.footer-title {
+  color: #fff;
+  font-size: 36px;
+}
+.footer-title__list {
+  @media (min-width: 768px) {
+    border-radius: 15px;
+  }
+}
+.footer-title__link {
+  color: #252525;
+}
+.footer-title__list {
+  @media (min-width: 768px) {
+    background-color: aquamarine;
+  }
+}

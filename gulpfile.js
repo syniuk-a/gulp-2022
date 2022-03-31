@@ -27,11 +27,11 @@ function watcher() {
     gulp.watch(path.watch.html, html);
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.js, js);
-    // gulp.watch(path.watch.images, images);
+    gulp.watch(path.watch.images, images);
 }
 
 //основные задачи
-const mainTasks = gulp.parallel(copy, html, scss, js); //, images
+const mainTasks = gulp.parallel(copy, html, scss, js, images); //
 
 // сценарии для выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));

@@ -21,7 +21,7 @@ import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { images } from "./gulp/tasks/images.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
-// import { }
+import { svgSprive } from "./gulp/tasks/svgSprive.js";
 
 // наблюдатель за изменениями в файлах
 function watcher() {
@@ -31,6 +31,8 @@ function watcher() {
     gulp.watch(path.watch.js, js);
     gulp.watch(path.watch.images, images);
 }
+// экспорт иконок отдельно выполняется командой npm run svgSprive
+export { svgSprive } 
 
 // последовательность обработки шрифтов
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);

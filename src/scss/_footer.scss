@@ -1,22 +1,23 @@
 .footer {
   display: flex;
   border-radius: 15px;
-  background-color: #000;
+  background-image: url(../img/photo_2021-05-23_11-52-17.jpg);
+  width: 150px;
+  height: 150px;
 }
 .footer-title {
   color: #fff;
   font-size: 36px;
 }
 .footer-title__list {
-  @media (min-width: 768px) {
-    border-radius: 15px;
-  }
+  border-radius: 15px;
+  background-color: aquamarine;
 }
 .footer-title__link {
   color: #252525;
 }
-.footer-title__list {
-  @media (min-width: 768px) {
-    background-color: aquamarine;
-  }
+.footer-bg {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
 }

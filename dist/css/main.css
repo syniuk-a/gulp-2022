@@ -1,3 +1,83 @@
+@font-face {
+  font-family: Anybody;
+  font-display: swap;
+  src: url("../fonts/Anybody-Black.woff2") format("woff2"), url("../fonts/Anybody-Black.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Anybody;
+  font-display: swap;
+  src: url("../fonts/Anybody-ExtraBold.woff2") format("woff2"), url("../fonts/Anybody-ExtraBold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Anybody;
+  font-display: swap;
+  src: url("../fonts/Anybody-ExtraLight.woff2") format("woff2"), url("../fonts/Anybody-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Anybody;
+  font-display: swap;
+  src: url("../fonts/Anybody-Light.woff2") format("woff2"), url("../fonts/Anybody-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Anybody;
+  font-display: swap;
+  src: url("../fonts/Anybody-Medium.woff2") format("woff2"), url("../fonts/Anybody-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Anybody;
+  font-display: swap;
+  src: url("../fonts/Anybody-Regular.woff2") format("woff2"), url("../fonts/Anybody-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Anybody;
+  font-display: swap;
+  src: url("../fonts/Anybody-SemiBold.woff2") format("woff2"), url("../fonts/Anybody-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Anybody;
+  font-display: swap;
+  src: url("../fonts/Anybody-Thin.woff2") format("woff2"), url("../fonts/Anybody-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MontserratAlternates;
+  font-display: swap;
+  src: url("../fonts/MontserratAlternates-Light.woff2") format("woff2"), url("../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Anybody;
+  font-display: swap;
+  src: url("../fonts/Anybody-Bold.woff2") format("woff2"), url("../fonts/Anybody-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 .header {
   background-color: aqua;
 }
@@ -13,12 +93,16 @@
   font-size: 24px;
 }
 
+.no-webp .footer {
+  background-image: url(../img/photo_2021-05-23_11-52-17.jpg); }
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 15px;
-  background-color: #000;
+  width: 150px;
+  height: 150px;
 }
 
 .footer-title {
@@ -26,8 +110,19 @@
   font-size: 36px;
 }
 
+.footer-title__list {
+  border-radius: 15px;
+  background-color: aquamarine;
+}
+
 .footer-title__link {
   color: #252525;
+}
+
+.footer-bg {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
 }
 
 .no-webp .main {
@@ -41,14 +136,6 @@
   color: aliceblue;
 }
 
-@media (min-width: 768px) {
-  .footer-title__list {
-    border-radius: 15px;
-  }
-
-  .footer-title__list {
-    background-color: aquamarine;
-  }
-}
+.webp .footer { background-image: url(../img/photo_2021-05-23_11-52-17.webp); }
 
 .webp .main { background: url(./img/photo_2021-11-10_08-19-33.webp) 0 0 no-repeat; }

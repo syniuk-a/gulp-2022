@@ -3,6 +3,7 @@ import plumber from "gulp-plumber"; //обработка ошибок
 import notify from "gulp-notify"; //сообщение об ошибке (подсказка)
 import browsersync from "browser-sync"; //локальный сервер
 import newer from "gulp-newer"; //проверка одновлений изображения
+import ifPlugin from "gulp-if"; //условное ветвление
 
 //экспортируем обекты
 export const plugins = {
@@ -11,4 +12,5 @@ export const plugins = {
     notify: notify,
     browsersync: browsersync,
     newer: newer,
+    if: ifPlugin
 }
